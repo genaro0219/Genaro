@@ -13,7 +13,7 @@ exports.handler = async (event, context) => {
 
     const charge = await stripe.charges.create(
       {
-        amount: 10000,
+        amount: 199,
         currency: "usd",
         description: "Down payment for first access to Accently",
         source: token,
